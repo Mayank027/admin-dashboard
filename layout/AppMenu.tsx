@@ -36,20 +36,20 @@ const AppMenu = () => {
                 { label: 'Misc', icon: 'pi pi-fw pi-circle', to: '/uikit/misc' }
             ]
         },
-        {
-            label: 'Prime Blocks',
-            items: [
-                { label: 'Free Blocks', icon: 'pi pi-fw pi-eye', to: '/blocks', badge: 'NEW' },
-                { label: 'All Blocks', icon: 'pi pi-fw pi-globe', url: 'https://blocks.primereact.org', target: '_blank' }
-            ]
-        },
-        {
-            label: 'Utilities',
-            items: [
-                { label: 'PrimeIcons', icon: 'pi pi-fw pi-prime', to: '/utilities/icons' },
-                { label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', url: 'https://primeflex.org/', target: '_blank' }
-            ]
-        },
+        // {
+        //     label: 'Prime Blocks',
+        //     items: [
+        //         { label: 'Free Blocks', icon: 'pi pi-fw pi-eye', to: '/blocks', badge: 'NEW' },
+        //         // { label: 'All Blocks', icon: 'pi pi-fw pi-globe', url: 'https://blocks.primereact.org', target: '_blank' }
+        //     ]
+        // },
+        // {
+        //     label: 'Utilities',
+        //     items: [
+        //         { label: 'PrimeIcons', icon: 'pi pi-fw pi-prime', to: '/utilities/icons' },
+        //         { label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', url: 'https://primeflex.org/', target: '_blank' }
+        //     ]
+        // },
         {
             label: 'Pages',
             icon: 'pi pi-fw pi-briefcase',
@@ -147,22 +147,22 @@ const AppMenu = () => {
                 }
             ]
         },
-        {
-            label: 'Get Started',
-            items: [
-                {
-                    label: 'Documentation',
-                    icon: 'pi pi-fw pi-question',
-                    to: '/documentation'
-                },
-                {
-                    label: 'View Source',
-                    icon: 'pi pi-fw pi-search',
-                    url: 'https://github.com/primefaces/sakai-react',
-                    target: '_blank'
-                }
-            ]
-        }
+        // {
+        //     label: 'Get Started',
+        //     items: [
+        //         {
+        //             label: 'Documentation',
+        //             icon: 'pi pi-fw pi-question',
+        //             to: '/documentation'
+        //         },
+        //         {
+        //             label: 'View Source',
+        //             icon: 'pi pi-fw pi-search',
+        //             url: 'https://github.com/primefaces/sakai-react',
+        //             target: '_blank'
+        //         }
+        //     ]
+        // }
     ];
 
     return (
@@ -172,9 +172,9 @@ const AppMenu = () => {
                     return !item?.seperator ? <AppMenuitem item={item} root={true} index={i} key={item.label} /> : <li className="menu-separator"></li>;
                 })}
 
-                <Link href="https://blocks.primereact.org" target="_blank" style={{ cursor: 'pointer' }}>
+                {/* <Link href="https://blocks.primereact.org" target="_blank" style={{ cursor: 'pointer' }}>
                     <img alt="Prime Blocks" className="w-full mt-3" src={`/layout/images/banner-primeblocks${layoutConfig.colorScheme === 'light' ? '' : '-dark'}.png`} />
-                </Link>
+                </Link> */}
             </ul>
         </MenuProvider>
     );
